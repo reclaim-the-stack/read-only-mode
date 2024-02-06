@@ -3,7 +3,7 @@
 require "json"
 
 module ReadOnlyMode
-  DEFALT_HTML_RESPONSE = File.read(File.expand_path("read_only_mode.html", __dir__))
+  DEFALT_HTML_RESPONSE = File.read(File.expand_path("read-only-mode.html", __dir__))
   DEFAULT_JSON_RESPONSE = { error: "Application is in read-only maintenance mode. Please try again later." }.to_json
 
   def self.enabled?
