@@ -4,6 +4,8 @@ A simple ruby gem for adding read only maintenance mode to your Rails / Rack app
 
 When read only mode is enabled, all non GET / HEAD requests will be rejected with a 503 Service Unavailable response. Additionally the 503 response will be given in case a GET request would raise a `PG::ReadOnlySqlTransaction` error.
 
+![screenshot](https://github.com/reclaim-the-stack/read-only-mode/blob/master/html-screenshot.png?raw=true)
+
 ## Installation
 
 Add the line to your application's Gemfile:
