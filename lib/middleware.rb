@@ -19,9 +19,9 @@ module ReadOnlyMode
     # 503 Service Unavailable with HTML or JSON depending on accept header
     def render_503(env)
       if env["HTTP_ACCEPT"] == "application/json"
-        [503, { "content-type" => "application/json" }, [ReadOnlyMode.json_response]]
+        [503, { "content-type" => "application/json; charset=utf-8" }, [ReadOnlyMode.json_response]]
       else
-        [503, { "content-type" => "text/html" }, [ReadOnlyMode.html_response]]
+        [503, { "content-type" => "text/html; charset=utf-8" }, [ReadOnlyMode.html_response]]
       end
     end
   end
