@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name = "read-only-mode"
-  spec.version = "0.1.0"
+  spec.version = "1.0.0"
   spec.authors = ["David Backeus"]
   spec.email = ["david.backeus@mynewsdesk.com"]
   spec.summary = "Simple read-only maintenance mode for Rails and Rack based web applications"
